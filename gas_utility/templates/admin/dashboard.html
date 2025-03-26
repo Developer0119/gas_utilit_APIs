@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2 class="text-primary">Admin Dashboard</h2>
+
+    {% if messages %}
+        <div class="alert alert-info">
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <div class="card mt-3">
+        <div class="card-body">
+            <h5 class="card-title">Dashboard Overview</h5>
+            <table class="table table-bordered mt-3">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Metric</th>
+                        <th>Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Total Users</td>
+                        <td>{{ total_users }}</td>
+                    </tr>
+                    <tr>
+                        <td>Total Service Requests</td>
+                        <td>{{ total_requests }}</td>
+                    </tr>
+                    <tr>
+                        <td>Total Support Tickets</td>
+                        <td>{{ total_tickets }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <a href="{% url 'logout' %}" class="btn btn-danger mt-3">Logout</a>
+</div>
+
+{% endblock %}
+
+
+
