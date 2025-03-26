@@ -46,10 +46,10 @@ Ensure you have the following installed:
 
 ### Service Requests
 | Method | Endpoint                             | Description                 |
-|--------|--------------------------------------|--------------------------- -|
-| GET    | `api/service-requests/ticket_list`   | List all requests           |
-| POST   | `api/service-requests/create/`       | Create a service request    |
-| GET    | `/api/service-requests/<id>/`        | Retrieve a specific request |
+|--------|-----------------------------------|--------------------------- -|
+| GET    | `api/service-requests/ticket_list`| List all requests           |
+| POST   | `api/service-requests/create/`    | Create a service request    |
+| GET    | `/api/service-requests/<id>/`     | Retrieve a specific request |
 
 
 ### Support Tickets
