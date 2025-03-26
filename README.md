@@ -6,31 +6,30 @@
 The **Gas Utility Service API** is a Django-based web application designed to handle service requests, support tickets, and user management for a gas utility company. It includes authentication, CRUD operations, and a dashboard for administrators.
 
 ## Features
-- **User Authentication** (Register, Login, Logout)
-- **Service Requests Management** (Create, View, Update)
+- **User Authentication** ( Login, Logout)
+- **Service Requests Management** (Create, View, )
 - **Support Ticket System** (Create, View, Track)
 - **Admin Dashboard** (User statistics, request & ticket tracking)
-- **API Endpoints** for seamless integration
 
 ## Installation
 
 ### Prerequisites
 Ensure you have the following installed:
-- Python 3.x
+- Python 3
 - Django
 - Django REST Framework (DRF)
-- PostgreSQL or SQLite (for database management)
+- SQLite (for database management)
 
 ### Steps
 
 1. **Create a Superuser** (For admin access)
-   ```sh
+   
    python manage.py createsuperuser
-   ```
+
 2. **Run the Server**
-   ```sh
+
    python manage.py runserver
-   ```
+
 3. **Access the API**
    - Open `http://127.0.0.1:8000/api/`
    - Use API clients like Postman or cURL for testing
