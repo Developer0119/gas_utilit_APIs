@@ -36,7 +36,7 @@ Ensure you have the following installed:
 
 ## API Endpoints
 
-### Authentication
+### Users
 | Method | Endpoint                | Description          |
 |--------|-------------------------|----------------------|
 | POST   | `/api/user/login/`      | User login           |
